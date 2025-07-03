@@ -1,0 +1,154 @@
+body{
+    background-color: black;
+    width: 1100px;
+    margin: auto;
+}
+
+
+/**Rahmen**/
+
+#festObenLinks {
+    top: 10px;
+    left: 110px;
+    position: fixed;
+    height: 245px;
+
+}
+
+#festObenRechts {
+    top: 10px;
+    right: 110px;
+    position: fixed;
+    height: 245px;
+    z-index: -1;
+}
+
+#cutOben {   
+    position: fixed;
+    right: 509px;
+    top: 10px;
+    width: calc(100vw - 399.183px - 853.267px);
+    height: 77.5px;
+    z-index: -1;
+}
+
+#cutUnten {
+    bottom: 0;
+    position: fixed;
+    left: 940px;
+    height: 140px;
+    width: calc(100vw - 398.867px - 852.583px);
+    z-index: -1;
+
+}
+
+#cutLinks {
+    left: 110px;
+    position: fixed;
+    width: 54.5px;
+    top: 250px;
+    height: calc(100vh - 245px - 528px);
+}
+
+#cutRechts {
+    right: 110px;
+    position: fixed;
+    width: 59.5px;
+    top: 250px;
+    height: calc(100vh - 245px - 528px);
+}
+
+#festUntenRechts {
+    position: fixed;
+    bottom: 0;
+    right: 110px;
+    height: 528px;
+    }
+
+#festUntenLinks {
+    position: fixed;
+    bottom: 0;
+    left: 110px;
+    height: 528px;
+    z-index: -1;
+}
+
+
+/** Website Inhalt **/
+
+
+.hintergrundTitelHomescreen {
+    position: absolute;
+    width: 58vw;
+    top: 19%;
+    left: 21%;
+    animation: flicker 1.5s infinite alternate;
+    
+}
+
+.hintergrundTitelHomescreen:hover {
+    animation: none;
+    
+}
+
+
+@keyframes flicker {
+    0% {opacity: 100%}
+    10% {opacity: 50%}
+    20% {opacity: 60%}
+    100% {opacity: 80%}
+    
+}
+
+
+/** Hexagons Auswahl **/
+
+.hexagons{
+    width: 250px;
+    animation: glow 1s ease-in-out infinite alternate;  
+    
+}
+
+.hexagons:hover{
+    animation: none;
+    
+}
+
+@keyframes glow {
+    0% {opacity: 100%}
+    100% {opacity: 80%}
+    
+}
+
+#hex1 {
+    position: absolute;
+    top: 410px;
+    left: 15.5%;
+    
+}
+#hex2 {
+    position: absolute;
+    top: 300px;
+    left: 28.5%;
+}
+#hex3 {
+    position: absolute;
+    top: 410px;
+    left: 41.5%;
+    
+}
+#hex4 {
+    position: absolute;
+    top: 300px;
+    left: 54.5%;
+    
+}
+#hex5 {
+    position: absolute;
+    top: 410px;
+    left: 67.5%;
+    
+}
+
+
+

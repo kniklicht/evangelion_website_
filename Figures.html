@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>gridview</title>
+        <link rel="stylesheet" href="MainSite.css">
+        
+        <style>
+
+            .figuresImages {
+                height: 60vh;
+            }
+
+        </style>        
+
+    </head>
+    
+    
+    
+    <body>
+    
+        <!-- Pc Selbst nur Deko -->
+
+        <div class="pcRahmen">
+            <img src="img/festObenLinks.png" id="festObenLinks">
+            <img src="img/cutOben.png" id="cutOben">
+            <img src="img/festObenRechts.png" id="festObenRechts">
+            <img src="img/cutRechts.png" id="cutRechts">
+            <img src="img/festUntenRechts.png" id="festUntenRechts">
+            <img src="img/cutUnten.png" id="cutUnten">
+            <img src="img/festUntenLinks.png" id="festUntenLinks">
+            <img src="img/cutLinks.png" id="cutLinks">
+        </div>           
+        
+        
+        <!-- Eigentlicher Website Inhalt, auf dem Bildschirm -->
+
+        <div class="grid"> 
+            
+            
+            <!-- Nummern und Texte zur Deko -->
+            
+            <div class="deko">
+<pre>
+NERV EVA UNIT-00: S^2 ENGINE
+CODE : 127
+F I L E : BRNDT N_SHR
+E X T E N S I O N : DGTL 
+E X_M O D E : TREE.H
+P R I O R I T Y : A--
+---------------------
+CODE: 258
+F I L E:
+MAGI.SYS
+EXTENSTION:
+4 0 9 6 
+OFF
+PRIORITY: 
+AAA
+---------
+Layer 3:
+Connection-
+Control
+Q:331
+---------
+Layer 2:
+DebLink:
+Q:321*LAPD
+---------
+Layer 1:
+Physical
+Connection
+L431*Basic 
+Interface
+---------
+RECEIVED BY MAGI : MELCHIOR
+CASPER - 3 CELLEBUM CALLOSUM 
+LC.L PURITY : 99.99999999999998%
+</pre>
+                       
+        
+            </div>
+            
+            
+            <!-- Navigationsleiste -->
+            
+            <div class="navbar">
+                <ul>
+                    <li>
+                    <a href="Posters.html">1.posters
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                    <li><a href="Books.html">2.books
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                    <li><a href="Figures.html" class="visiting">3.figures
+                    <div class="navBarBarVisiting"></div>
+                    </a>
+                    </li>
+                    <li><a href="Shirts.html">4.shirts
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                    <li><a href="Extras.html">5.extras
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <!-- Bildersammlung -->
+            
+            <div class="main">
+                
+                
+                <div class="figureContainer">
+                    
+                    <div class="Figures">
+                        <img src="img/rei1.png" class="figuresImages" onmouseover="this.src='img/rei2.png';" onmouseout="this.src='img/rei1.png';">
+                    </div>
+                    
+                    <div class="Figures">
+                        <img src="img/rei3.png" class="figuresImages" onmouseover="this.src='img/rei4.png';" onmouseout="this.src='img/rei3.png';">
+                    </div>
+                        
+                    <div class="Figures">
+                        <img src="img/rei5.png" class="figuresImages" onmouseover="this.src='img/rei6.png';" onmouseout="this.src='img/rei5.png';">
+                    </div>
+                        
+                    <div class="Figures">
+                        <img src="img/rei7.png" class="figuresImages" onmouseover="this.src='img/rei8.png';" onmouseout="this.src='img/rei7.png';">
+                    </div>
+                        
+                    <div class="Figures">
+                        <img src="img/asuka1.png" class="figuresImages" onmouseover="this.src='img/asuka2.png';" onmouseout="this.src='img/asuka1.png';">
+                    </div>
+                        
+                    <div class="Figures">
+                        <img src="img/figur1.png" class="figuresImages" onmouseover="this.src='img/figur2.png';" onmouseout="this.src='img/figur1.png';">
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            
+            
+            <!-- Knoepfe zum Aussuchen der einzelnen Bilder-->
+        
+            <div class="buttons">
+                
+                <img id="bar" src="img/bar.png">
+            
+                <div class="buttonContainer">    
+
+                    <button class="numberedButton nowButton" onclick="currentDiv(1)">+1</button> 
+                    <button class="numberedButton nowButton" onclick="currentDiv(2)">+2</button> 
+                    <button class="numberedButton nowButton" onclick="currentDiv(3)">+3</button>
+                    <button class="numberedButton nowButton" onclick="currentDiv(4)">+4</button>
+                    <button class="numberedButton nowButton" onclick="currentDiv(5)">+5</button> 
+                    <button class="numberedButton nowButton" onclick="currentDiv(6)">+6</button>
+
+                </div> 
+                
+            </div>
+            
+        
+            <!-- Textbox mit Informationen ueber das jeweillige Bild-->
+            
+            <div class="infos">
+                
+                
+                <div class="Texte">
+                    
+                    <div class="line"></div>
+                    
+<pre>
+1100101100101110101001010100111110011
+
+in-story version: Rebuilds of 
+Evangelion (called Evangelion: New 
+Theatrical when first released)
+official figurine name: Evangelion: 
+New Theatrical Edition Rei Ayanami 
+LPM Statue
+manufacturer:  SEGA Goods
+material: PVC, LPM
+height: 18cm
+release Date: 12.02.2016
+bought in: unknown
+
+1101001011000010101100101111111010010
+</pre>  
+                </div>
+
+                <div class="Texte">
+                    <div class="line"></div>
+                    
+<pre>
+1101010110100001100000101011010001000
+
+in-story version: Rebuilds of 
+Evangelion 
+official figurine name: Evangelion 
+DesQ Desktop EVA Blind Box 
+manufacturer: Re-ment
+material: ATBC-PVC, ABS
+height: 7cm
+release date: 04.03.2024 
+bought in: Berlin, Germany
+
+1101010110100001100000101011010001000
+</pre>
+                </div>
+
+                <div class="Texte">
+                    <div class="line"></div>
+                    
+<pre>
+1101010110100001100000101011010001000
+
+in-story version: Petit Eva: 
+Evangelion@School
+official figurine name: Ayanami Rei - 
+Evangelion New Theatrical Version 
+Petit Eva Mascot
+manufacturer: Bandai
+material: PVC
+height: 4cm
+release date: 06.2010
+bought in: Düsseldorf, Germany
+
+1101010110100001100000101011010001000
+</pre>
+                </div>
+
+                <div class="Texte">
+                    <div class="line"></div>
+                    
+<pre>
+0110111111011010101010100111110111011
+
+in-story version: Evangelion 3.0 You 
+Can (Not) Redo (Evangelion 
+Shin Gekijouban: Q)
+official figurine name: Ayanami Rei 
+-Lift-off!- (Ichiban Kuji Evangelion 
+-Lift-off!- Series)
+manufacturer: Banpresto
+material: PVC, ABS
+height: 23cm
+release date: 01.11.2014
+bought in: Latvia, Riga
+
+0110111111011010101010100111110111011
+</pre>     
+                </div>
+                
+                <div class="Texte">
+                    <div class="line"></div>
+                    
+<pre>
+0111010001110111011011100011100011100
+
+in-story version: (Rebuild) 
+Evangelion: 3.0+1.0 Thrice Upon a 
+Time 
+official figurine name: SEGA Goods 
+Evangelion 3.0 - Asuka Last Mission 
+Activate Color
+manufacturer:  SEGA Goods
+material: PVC
+height: 21cm
+release date: 10. Sep 2021
+bought in: Germany, Mannnheim
+
+0001001001010110010010001010100010101
+</pre>     
+                </div>
+                
+                <div class="Texte">
+                    <div class="line"></div>
+                    
+<pre>
+0101111111110111111010000100100000000
+
+in-story version: (Rebuild) 
+Evangelion: 3.0 You Can (Not) Redo 
+(younger Sister of Tōji Suzuhara, 
+only appears in Rebuilds)
+official figurine name: Evangelion 
+Shin Gekijouban: Q -Suzuhara Sakura-
+High Grade Figure (SEGA)
+manufacturer:  SEGA 
+material: PVC, ABS
+height: 17cm
+release date : 27.01.2014
+bought in: Italy, Florence
+
+0011011011101001100000000010011111110
+</pre>     
+                </div>
+            </div>
+         
+            
+
+        </div>
+        
+        
+    <script>
+        
+    var slideIndex = 1;
+        showDivs(slideIndex);   
+        
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var figures = document.getElementsByClassName("Figures");
+        var texts = document.getElementsByClassName("Texte");
+        var dots = document.getElementsByClassName("nowButton");
+        
+        if (n > figures.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = figures.length}
+        
+        // Hide all figures
+        for (i = 0; i < figures.length; i++) {
+            figures[i].style.display = "none";    
+        }
+        
+        // Hide all text blocks
+        for (i = 0; i < texts.length; i++) {
+            texts[i].style.display = "none";    
+        }
+        
+        
+        // Remove highlight from buttons
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" usedButton", "");
+        }
+        
+        // Show the selected book and text
+        figures[slideIndex-1].style.display = "block";
+        texts[slideIndex-1].style.display = "block";
+        
+        // Highlight the selected button
+        dots[slideIndex-1].className += " usedButton"; 
+
+    }  
+        
+    </script>
+    
+        
+    
+    </body>
+</html>

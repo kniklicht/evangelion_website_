@@ -1,0 +1,148 @@
+
+body{
+    background-color: black;
+    width: 1200px;
+    margin: auto;
+
+    }
+
+img{
+    width: 70vw;
+    margin: auto;
+    margin-top: 80px;
+    display: block;
+
+    }  
+
+.Intro {
+    display: none;
+    animation: IntroFade 2s, glow 3s ease-in-out infinite alternate;
+    
+
+}
+
+
+/** Intro Images Fading Animation **/
+
+
+#titleCard {
+    animation: titleCardGlow 2s ease-in-out infinite alternate;
+    width: 50vw;
+    margin-top: 20vh;
+    
+}
+
+    @keyframes titleCardGlow {
+        0% {opacity: 100%}
+        100% {opacity: 50%}
+    
+    }
+
+    @keyframes IntroFade {
+        0% {opacity: 0}
+        100% {opacity: 100%}
+
+    }
+
+
+/** Typewriter Animation und Text Style **/
+
+    .animation-typewriter p {
+        color: white;
+        border-right: .15em solid white;
+        font-family: "Courier";
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: black;
+        transform: translate(0, -150px);
+
+        }
+
+    .animation-typewriter p:nth-child(1) {
+        width: 50em;
+        animation: type 5s steps(50, end);
+        animation-fill-mode: forwards;
+
+        }
+
+    .animation-typewriter p:nth-child(2) {
+        width: 80em;
+        opacity: 0;
+        animation: type2 5s steps(80, end), blink .5s step-end infinite alternate;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+
+        }
+
+        @keyframes type {
+          0% {width: 0;}
+          99.9% {border-right: .15em solid white;}
+          100% {border: none;}
+
+        }
+
+        @keyframes type2 {
+          0% {width: 0;}
+          1% {opacity: 1;}
+          100% {opacity: 1;}
+
+        }
+
+        @keyframes blink {
+          50% {border-color: transparent;}
+
+        }
+
+
+/** Glowing Animation **/
+
+        @keyframes glow {
+            from {text-shadow: 0 0 10px #fff, 0 0 10px #fff;}
+            to {text-shadow: 0 0 10px #fff, 0 0 20px #ffffff,}
+
+        }
+
+
+/** Button Left **/
+
+.buttonLeft {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    width: 60px;
+    height: 50px;
+    position: fixed;
+    top: 50%;
+    left: 200px;
+    
+}
+
+.buttonLeft:hover {
+    color: #d5d5d5;
+    background-color: #151515;
+    
+}
+
+
+
+/** Button Right **/
+
+.buttonRight{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    width: 60px;
+    height: 50px;
+    position: fixed;
+    top: 50%;
+    right: 200px;
+    
+}
+
+.buttonRight:hover {
+    color: #d5d5d5;
+    background-color: #151515;
+    
+}
+

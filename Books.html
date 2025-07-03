@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>gridview</title>
+        <link rel="stylesheet" href="MainSite.css">
+        
+        <style>
+
+            .booksImages{
+                height: 60vh;
+            }
+
+        </style>      
+        
+    </head>
+    
+    
+    
+    <body>
+    
+        <!-- Pc Selbst nur Deko -->
+
+        <div class="pcRahmen">
+            <img src="img/festObenLinks.png" id="festObenLinks">
+            <img src="img/cutOben.png" id="cutOben">
+            <img src="img/festObenRechts.png" id="festObenRechts">
+            <img src="img/cutRechts.png" id="cutRechts">
+            <img src="img/festUntenRechts.png" id="festUntenRechts">
+            <img src="img/cutUnten.png" id="cutUnten">
+            <img src="img/festUntenLinks.png" id="festUntenLinks">
+            <img src="img/cutLinks.png" id="cutLinks">
+        </div>           
+        
+        
+        <!-- Eigentlicher Website Inhalt, auf dem Bildschirm -->
+
+        <div class="grid"> 
+            
+            
+            <!-- Nummern und Texte zur Deko -->
+            
+            <div class="deko">
+<pre>
+NERV EVA UNIT-00: S^2 ENGINE
+CODE : 127
+F I L E : BRNDT N_SHR
+E X T E N S I O N : DGTL 
+E X_M O D E : TREE.H
+P R I O R I T Y : A--
+---------------------
+CODE: 258
+F I L E:
+MAGI.SYS
+EXTENSTION:
+4 0 9 6 
+OFF
+PRIORITY: 
+AAA
+---------
+Layer 3:
+Connection-
+Control
+Q:331
+---------
+Layer 2:
+DebLink:
+Q:321*LAPD
+---------
+Layer 1:
+Physical
+Connection
+L431*Basic 
+Interface
+---------
+RECEIVED BY MAGI : MELCHIOR
+CASPER - 3 CELLEBUM CALLOSUM 
+LC.L PURITY : 99.99999999999998%
+</pre>
+                       
+        
+            </div>
+
+            <!-- Navigationsleiste -->
+            
+            <div class="navbar">
+                <ul>
+                    <li>
+                    <a href="Posters.html">1.posters
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                    <li><a href="Books.html" class="visiting">2.books
+                    <div class="navBarBarVisiting"></div>
+                    </a>
+                    </li>
+                    <li><a href="Figures.html">3.figures
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                    <li><a href="Shirts.html">4.shirts
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                    <li><a href="Extras.html">5.extras
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <!-- Bildersammlung -->
+            
+            <div class="main">
+                
+                <div class="bookContainer">
+                    
+                    <div class="Books">
+                        <img src="img/buch1Vorne.jpeg" class="booksImages" onmouseover="this.src='img/buch1Hinten.jpeg';" onmouseout="this.src='img/buch1Vorne.jpeg';">
+                    </div>
+                    
+                    <div class="Books">
+                        <img src="img/buch2Vorne.jpeg" class="booksImages" onmouseover="this.src='img/buch2Hinten.jpeg';" onmouseout="this.src='img/buch2Vorne.jpeg';">
+                    </div>
+                    
+                    <div class="Books">
+                        <img src="img/buch3Vorne.jpeg" class="booksImages" onmouseover="this.src='img/buch3Hinten.jpeg';" onmouseout="this.src='img/buch3Vorne.jpeg';">
+                    </div>
+                    
+                    <div class="Books">
+                        <img src="img/buch4Vorne.jpeg" class="booksImages" onmouseover="this.src='img/buch4Hinten.jpeg';" onmouseout="this.src='img/buch4Vorne.jpeg';">
+                    </div>
+                    
+                </div>
+                  
+            </div>
+            
+            
+            <!-- Knoepfe zum Aussuchen der einzelnen Bilder-->
+        
+            <div class="buttons">
+                
+                <img id="bar" src="img/bar.png">            
+            
+                <div class="buttonContainer">    
+
+                    <button class="numberedButton nowButton" onclick="currentDiv(1)">+1</button> 
+                    <button class="numberedButton nowButton" onclick="currentDiv(2)">+2</button> 
+                    <button class="numberedButton nowButton" onclick="currentDiv(3)">+3</button>
+                    <button class="numberedButton nowButton" onclick="currentDiv(4)">+4</button>
+
+                </div> 
+                
+            </div>
+            
+            
+            <!-- Textbox mit Informationen ueber das jeweillige Bild-->
+            
+            <div class="infos">
+                
+                    <div class="Texte">
+                        <h2>EVANGELION Illustrations 2007 - 2017</h2>
+                        <div class="line"></div>
+<pre>
+0001011101110010011000001111010000000
+
+type: artbook
+publisher: Groundworks Co., Itd.
+release date: 20 March 2018
+length: 175 pages
+height: 33cm 
+width: 25,5cm
+includes: illustrations include 
+posters, marketing campaigns, 
+advertising
+notes: illustrations by illustrators
+of khara inc
+
+0010100101101010110110000011000101110
+</pre>
+                    </div>
+                    
+                    <div class="Texte">
+                        <h2>Groundworks of EVANGELION VOL. 2</h2>
+                        <div class="line"></div>
+<pre>
+1101011000110011010100111101111110111
+
+type: artbook
+publisher: GAINAX
+release date: 22 December 2000,
+reprint 07 June 2020
+length: 252 pages
+height: 30cm 
+width: 21cm
+includes: sketches from the EVA TV 
+series' episodes 9, 13, 14, 15, 16, 
+18 and 19
+notes: this 2020 Version includes 24 
+colored pages in addition to the 
+remaining colorless sketches
+
+0011101100011100100100100111011001011
+</pre>
+                    </div>
+                    
+                    <div class="Texte">
+                        <h2>Groundworks of EVANGELION VOL. 3</h2>
+                        <div class="line"></div>
+<pre>
+0011101100011100100100100111011001011
+
+type: artbook
+publisher: GAINAX
+release date: 30 March 2001, 
+reprint 07 June 2020
+length: 313 pages
+height: 30cm 
+width: 21cm
+includes: sketches from the EVA TV 
+series' and episodes 20, 21, 22, 23, 
+24, 25, 18 and 26
+notes: this 2020 version includes 20 
+colored pages in addition to the 
+remaining colorless sketches
+
+1001110011010100000011011011000000000
+</pre>
+                    </div>
+                    
+                    <div class="Texte">
+                        <h2>THE ESSENTIAL EVANGELION CHRONICLE Side B</h2>
+                        <div class="line"></div>
+<pre>
+0100101101101001100101110000001000000
+
+type: educational artbook
+publisher: Sony Magazines, WE’VE Inc.
+release date: November 2007 Japan, 
+February 2016 worldwide
+length: 127 pages
+height: 28cm 
+width: 22cm
+includes: summaries and explanations
+to characters, episodes and story 
+elements 
+notes: compilation of issues 16-30 of 
+the Evangelion Chronicle magazine 
+
+0110001010100110111100111101000101000
+</pre>
+                    </div>
+                
+            </div>
+            
+            
+            
+
+        </div>
+    
+        
+    <script>   
+        
+        
+    var slideIndex = 1;
+        showDivs(slideIndex);   
+        
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var books = document.getElementsByClassName("Books");
+        var texts = document.getElementsByClassName("Texte");
+        var dots = document.getElementsByClassName("nowButton");
+        
+        if (n > books.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = books.length}
+        
+        // Hide all books
+        for (i = 0; i < books.length; i++) {
+            books[i].style.display = "none";    
+        }
+        
+        // Hide all text blocks
+        for (i = 0; i < texts.length; i++) {
+            texts[i].style.display = "none";    
+        }
+        
+        
+        // Remove highlight from buttons
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" usedButton", "");
+        }
+        
+        // Show the selected book and text
+        books[slideIndex-1].style.display = "block";
+        texts[slideIndex-1].style.display = "block";
+        
+        // Highlight the selected button
+        dots[slideIndex-1].className += " usedButton"; 
+
+    }
+
+
+        
+    </script>
+    
+    </body>
+</html>

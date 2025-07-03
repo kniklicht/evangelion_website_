@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>shirts</title>
+        <link rel="stylesheet" href="MainSite.css">
+        
+        <style>
+
+            .shirtsImages {
+                height: 60vh;
+            }
+
+
+        </style>    
+     
+        
+    </head>
+    
+    
+    
+    <body>
+    
+        <!-- Pc Selbst nur Deko -->
+
+        <div class="pcRahmen">
+            <img src="img/festObenLinks.png" id="festObenLinks">
+            <img src="img/cutOben.png" id="cutOben">
+            <img src="img/festObenRechts.png" id="festObenRechts">
+            <img src="img/cutRechts.png" id="cutRechts">
+            <img src="img/festUntenRechts.png" id="festUntenRechts">
+            <img src="img/cutUnten.png" id="cutUnten">
+            <img src="img/festUntenLinks.png" id="festUntenLinks">
+            <img src="img/cutLinks.png" id="cutLinks">
+        </div>           
+        
+        
+        <!-- Eigentlicher Website Inhalt, auf dem Bildschirm -->
+
+        <div class="grid"> 
+            
+            
+            <!-- Nummern und Texte zur Deko -->
+            
+            <div class="deko">
+<pre>
+NERV EVA UNIT-00: S^2 ENGINE
+CODE : 127
+F I L E : BRNDT N_SHR
+E X T E N S I O N : DGTL 
+E X_M O D E : TREE.H
+P R I O R I T Y : A--
+---------------------
+CODE: 258
+F I L E:
+MAGI.SYS
+EXTENSTION:
+4 0 9 6 
+OFF
+PRIORITY: 
+AAA
+---------
+Layer 3:
+Connection-
+Control
+Q:331
+---------
+Layer 2:
+DebLink:
+Q:321*LAPD
+---------
+Layer 1:
+Physical
+Connection
+L431*Basic 
+Interface
+---------
+RECEIVED BY MAGI : MELCHIOR
+CASPER - 3 CELLEBUM CALLOSUM 
+LC.L PURITY : 99.99999999999998%
+</pre>
+                       
+        
+            </div>
+            
+            
+            <!-- Navigationsleiste -->
+            
+            <div class="navbar">
+                <ul>
+                    <li>
+                    <a href="Posters.html">1.posters
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                    <li><a href="Books.html">2.books
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                    <li><a href="Figures.html">3.figures
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                    <li><a href="Shirts.html" class="visiting">4.shirts
+                    <div class="navBarBarVisiting"></div>
+                    </a>
+                    </li>
+                    <li><a href="Extras.html">5.extras
+                    <div class="navBarBar"></div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <!-- Bildersammlung -->
+            
+            <div class="main">
+                
+                <div class="shirtContainer">
+                    
+                    <div class="Shirts">
+                        <img src="img/shirt1.png" class="shirtsImages">
+                    </div>
+                        
+                    <div class="Shirts">
+                        <img src="img/shirt2.png" class="shirtsImages">
+                    </div>
+                    
+                    <div class="Shirts">
+                        <img src="img/shirt3.png" class="shirtsImages"> 
+                    </div>
+                        
+                    <div class="Shirts">
+                        <img src="img/shirt4.png" class="shirtsImages">
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <!-- Knoepfe zum Aussuchen der einzelnen Bilder-->
+        
+            <div class="buttons">
+                
+                <img id="bar" src="img/bar.png">
+            
+                <div class="buttonContainer">   
+
+                    <button class="numberedButton nowButton" onclick="currentDiv(1)">+1</button> 
+                    <button class="numberedButton nowButton" onclick="currentDiv(2)">+2</button> 
+                    <button class="numberedButton nowButton" onclick="currentDiv(3)">+3</button>
+                    <button class="numberedButton nowButton" onclick="currentDiv(4)">+4</button>
+
+                </div> 
+                
+            </div>
+            
+            
+            <!-- Textbox mit Informationen ueber das jeweillige Bild-->
+            
+            <div class="infos">
+                
+                <div class="Texte">
+                    <p>
+                    Type: selfmade 
+                    Size: S
+                    </p>  
+                </div>
+                
+                <div class="Texte">
+                    <p>
+                    Type: Second Hand
+                    Size: XL
+                    </p>  
+                </div>
+                
+                <div class="Texte">
+                    <p>
+                    Type: Second Hand 
+                    Size: L
+                    </p>  
+                </div>
+                
+                <div class="Texte">
+                    <p>
+                    Type: Second Hand 
+                    Size: S
+                    </p>  
+                </div>
+                
+            </div>
+            
+               
+            
+        </div>
+        
+        
+    <script>
+        
+    var slideIndex = 1;
+        showDivs(slideIndex);   
+        
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var shirts = document.getElementsByClassName("Shirts");
+        var texts = document.getElementsByClassName("Texte");
+        var dots = document.getElementsByClassName("nowButton");
+        
+        if (n > shirts.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = shirts.length}
+        
+        // Hide all shirts
+        for (i = 0; i < shirts.length; i++) {
+            shirts[i].style.display = "none";    
+        }
+        
+        // Hide all text blocks
+        for (i = 0; i < texts.length; i++) {
+            texts[i].style.display = "none";    
+        }
+        
+        
+        // Remove highlight from buttons
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" usedButton", "");
+        }
+        
+        // Show the selected book and text
+        shirts[slideIndex-1].style.display = "block";
+        texts[slideIndex-1].style.display = "block";
+        
+        // Highlight the selected button
+        dots[slideIndex-1].className += " usedButton"; 
+
+    }
+
+
+    </script>
+        
+        
+    </body>
+</html>
