@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>evangelion collection</title> 
+        <link rel="stylesheet" href="Index.css">
+    </head>
+    
+    
+    
+    <body>
+        
+        <div class="introContainer">
+            
+        
+            <img src="/img/titlecard.png" class="Intro" id="titleCard">
+            
+            <div class="Intro">
+                <img src="/img/Intro1.png">
+                <div class="animation-typewriter">
+                    <p>this is a website documenting my personal collection of Evangelion merch_</p>
+                    <p>we collect what we love or what is personal to us. As is the story of Evangelion to me_</p>
+                </div>
+            </div>
+            
+            <div class="Intro">
+                <img src="/img/Intro2.png">
+                <div class="animation-typewriter">
+                    <p>Evangelion connects religion, sciences and philosophy_</p>
+                    <p>fields thought to be polar opposites by most of those interested in them today, though one couldn't exist without the other_</p>
+                </div>
+            </div>
+            
+            <div class="Intro">
+                <img src="/img/Intro3.png">
+                <div class="animation-typewriter">
+                    <p>questions arise like the meaning of earthly life_</p>
+                    <p>as well as the nature of humanity itself flawed as it is and has always been_</p>
+                </div>
+            </div>
+            
+            <div class="Intro">
+                <img src="/img/Intro4.png">
+                <div class="animation-typewriter">
+                    <p>throughout the story of Evangelion, humanity's population shrinks_</p>
+                    <p>to a fraction of what it once was due to the consequences of a failed biological experiment called to Third Impact_</p>
+                </div>
+            </div>
+            
+            <div class="Intro">
+                <img src="/img/Intro5.png">
+                <div class="animation-typewriter">
+                    <p>sciences are forced to advance to a point even further than we are today_</p>
+                    <p>due to the responsibility of all lifes survival being in the hands of the small portion of surivors_ </p>
+                </div>
+            </div>
+            
+            <div class="Intro">
+                <img src="/img/Intro6.png">
+                <div class="animation-typewriter">
+                    <p>every character in Evangelion is deeply psychologically flawed_</p>
+                    <p>and yet we see humanity playing God, a perfect and whole being, by trying to speed up the course of evolution_</p>
+                </div>
+            </div>
+            
+            <div class="Intro">
+                <a href="Homescreen.html"><img src="/img/Intro7.png"></a>
+                <div class="animation-typewriter">
+                    <p>due to Evangelion dealing with typical and mundane human issues_</p>
+                    <p>I truly believe anyone could learn something from watching it fully_</p>
+                </div>
+            </div>
+
+            <button class="buttonLeft" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="buttonRight" onclick="plusDivs(+1)">&#10095;</button>
+            
+        </div>
+        
+        <script>
+            var slideIndex = 1;
+                showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("Intro");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i =0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+                }
+       
+            
+        </script>
+        
+        
+    </body>
+    
+    
+    
+</html>
